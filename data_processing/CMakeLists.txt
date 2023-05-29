@@ -17,8 +17,8 @@ include_directories("${CMAKE_CURRENT_SOURCE_DIR}")
 set(LIBROSA_CPP_DIR LibrosaCpp)
 include_directories(${LIBROSA_CPP_DIR})
 
-aux_source_directory(test TEST_DIR)
+aux_source_directory(processing_scripts TEST_DIR)
 
-add_executable(test  ${TEST_DIR})
+add_executable(processing_scripts  ${TEST_DIR})
 
-target_link_libraries(test LINK_PRIVATE -ldl)
+target_link_libraries(processing_scripts LINK_PRIVATE -ldl)
